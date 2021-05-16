@@ -13,6 +13,7 @@ class Course extends Model
     }
 
     //Función para que la descripción se interrumpa en 80 caracteres
+    //virtual field
     public function getExcerptAttribute(){
         return substr($this->description,0,80);
     }
