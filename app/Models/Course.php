@@ -11,6 +11,9 @@ class Course extends Model
     public function user(){
         return $this->belongsTo(User::class);
     }
+    public function posts(){
+        return $this->hasMany(Post::class);
+    }
 
     //Función para que la descripción se interrumpa en 80 caracteres
     //virtual field
