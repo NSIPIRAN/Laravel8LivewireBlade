@@ -11,4 +11,9 @@ class Course extends Model
     public function user(){
         return $this->belongsTo(User::class);
     }
+
+    //Función para que la descripción se interrumpa en 80 caracteres
+    public function getExcerptAttribute(){
+        return substr($this->description,0,80);
+    }
 }
