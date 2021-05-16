@@ -8,10 +8,10 @@
 </head>
 <body>
     <header class="shadow-lg">
-        <div class="bg-blue-900 py-1"></div>
-        <nav class="bg-blue-800 py-2">
+        <div class="bg-green-400 py-1"></div>
+        <nav class="bg-green-300 py-2">
             <a href="{{ route('home') }}">
-                <img src="{{ asset('images/spide.jpg') }}" class="mx-auto h-8">
+                <img src="{{ asset('images/proceso.png') }}" class="mx-auto h-8">
             </a>
         </nav>
     </header> 

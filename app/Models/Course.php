@@ -20,4 +20,11 @@ class Course extends Model
     public function getExcerptAttribute(){
         return substr($this->description,0,80);
     }
+    //metodo personalizado
+    public function similar(){
+        return $this->where('category_id', $this->category_id)
+        ->with('user')
+        ->take(2)
+        ->get();
+        }
 }
